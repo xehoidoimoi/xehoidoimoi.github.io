@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script src="./main.js"></script>
+      <script>document.write("<p>Line test!</p>");</script>
+
+<form>
+      <div>
+            <label for="">Nhập số 1</label>
+            <input type="number" id="number1">
+      </div>
+      <div>
+            <label for="">Nhập số 2</label>
+            <input type="number" id="number2">
+      </div>
+      <div>
+            <button type="button" id="btn">Tổng</button>
+            <!-- <button type="button" class="btn">.</button>
+            <button type="button" class="btn">K</button>
+            <button type="button" class="btn">Z</button> -->
+      </div>
+      <div id="res"></div>
+</form>
+<!-- <script type="text/javascript">
+      var arr = document.getElementsByClassName('btn');
+      function calculate() {
+            var x = number1.value;
+            var y = number2.value;
+            var opt = this.innerText;
+            var z = eval(x + opt + y);
+            res.innerHTML = `Kết quả: ${x} ${opt} ${y} = ${z}`
+      }
+      for (var i = 0; i <= arr.length - 1; i++) {
+            arr[i].onclick = calculate;
+      }
+      var arr = document.getElementsByClassName('btn');
+      function calculate() {
+            var x = number1.value;
+            var y = number2.value;
+            var opt = this.innerText;
+            var z = eval(x + opt + y);
+            res.innerHTML = `Kết quả: ${x} ${opt} ${y} = ${z}`
+      }
+      for (var i = 0; i <= arr.length - 1; i++) {
+            arr[i].onclick = calculate;
+      }
+</script> -->
+
+<!-- <script type="text/javascript">
+
+var arr = document.getElementById('btnAdd');
+function calculate() {
+      var x = number1.value;
+      var y = number2.value;
+      var z = eval(x * y);
+      res.innerHTML = `${z}`;
+}
+
+arr.onclick = calculate;
+
+
+</script> -->
+<script type="text/javascript">
+      btn.onclick = function () {
+            var x = number1.value;
+            var y = number2.value;
+            var z = eval(parseInt(x) * parseInt(y));
+            res.innerHTML = `${z}`
+      }
+
+
+</script>
+
+
+</body>
+</html>
